@@ -1,0 +1,39 @@
+
+@media screen and ( max-width: 640px ) {
+
+    section.container {
+        max-width: 640px;
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and ( max-width: 420px ) {
+
+    header.header-container i {
+        font-size: 48px;
+    }
+    
+    header.header-container h1 {
+        font-size: 28px;
+        margin-top: 25px;
+    }
+    
+    header.header-container h2 {
+        font-size: 20px;
+        margin-top: 7px;
+    }
+
+    section.row {
+        flex-direction: column;
+    }
+
+    button.highlight {
+        margin-right: 0px;
+    }
+    
+    button.clear {
+        margin: 5px 0 0 0;
+    }
+
+}

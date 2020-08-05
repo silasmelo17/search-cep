@@ -1,0 +1,168 @@
+
+header.header-container {
+    background: #1cb872;
+    padding: 45px 0;
+    text-align: center;
+    color: white;
+}
+
+header.header-container i {
+    font-size: 60px;
+    margin: 0 30px;
+}
+
+header.header-container h1,
+header.header-container h2 {
+    letter-spacing: 1px;
+}
+
+header.header-container h1 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+header.header-container h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+section.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+p.error {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #e23137;
+    margin: 20px 0 0 20px;
+}
+
+p.length {
+    text-align: right;
+    color: #0098fe;
+    margin-bottom: 10px;
+}
+
+section.row {
+    display: flex;
+    margin-top: 20px;
+}
+
+section.search-address {
+    overflow: hidden;
+    transition: all 0.3s; 
+    height: 88px;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+section.search-address select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+section.hidden {
+    opacity: 0;
+    height: 0;
+}
+
+button.highlight {
+    flex: 1;
+    background: #0098fe;
+    border: 0;
+    color: white;
+    margin-right: 3px;
+}
+
+button.lowlight {
+    margin: 5px 0 0 auto;
+    border: 0;
+    padding: 0;
+    text-align: right;
+    font-size: 14px;
+}
+
+button.clear {
+    flex: 1;
+    border-color: #0098fe;
+    margin: 0 0 0 3px;
+}
+
+ul.result li {
+    position: relative;
+    padding: 12px 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    list-style: none;
+}
+
+ul.result li:nth-child(2n) {
+    background: #f1eded;
+}
+
+ul.result li:hover {
+    background: #0098fe;
+    color: white;
+}
+
+ul.result li::before,
+ul.result li::after {
+    position: absolute;
+    bottom: 100%;
+    right: 10%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+ul.result li::before {
+    content: 'Clique para copiar';
+    transform: translateY(-8px);
+
+    padding: 8px 12px;
+    background: #555;
+    color: white;
+    border-radius: 4px;
+}
+
+ul.result li::after {
+    content: '';
+    transform: translateX( -86px );
+
+    border: 4px solid transparent;
+    border-top-color: #555;  
+}
+
+ul.result li:hover::before,
+ul.result li:hover::after  {
+    opacity: 1;
+}
+
+ul.result li.copied::before {
+    content: 'Copiado'
+}
+
+ul.result li.copied::after {
+    transform: translateX( -48px);
+}
+
+article.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+article.pagination button + button {
+    margin-left: 4px;
+}
+
+button.page {
+    border-color: #0098fe;
+    background: #0098fe;
+    color: white;
+}
